@@ -71,6 +71,9 @@
 #
 # root.mainloop()
 #
+
+#===========================================================================
+
 # from tkinter import *
 #
 # def left_click(event):
@@ -782,5 +785,52 @@
 #
 # button = Button(root, text = 'Ok')
 # button.pack()
+#
+# root.mainloop()
+#
+# from tkinter import *
+# from tkinter import ttk
+# from tkinter.ttk import Notebook
+#
+# root = Tk()
+# root.geometry('200x200')
+#
+# i = 0
+# while i < 20:
+#     root.rowconfigure(i, weight = 1)
+#     root.columnconfigure(i, weight = 1)
+#     i += 1
+# tab = Notebook(root)
+# tab.grid(row = 1, column = 0, columnspan = 20, rowspan = 19, sticky = 'NESW')
+#
+# tab1 = ttk.Frame(tab)
+# tab2 = ttk.Frame(tab)
+#
+# tab.add(tab1, text = 'tab 1')
+# tab.add(tab2, text = 'tab 2')
+#
+# root.mainloop()
+#
+# from tkinter import *
+# from tkinter import ttk
+#
+# i = 1
+#
+# def add_new_tab():
+#     global i
+#     new_page = ttk.Frame(tab)
+#     tab.add(new_page, text = 'tab '+str(i))
+#     label = Label(new_page, text = 'Hello World')
+#     label.pack()
+#     i += 1
+#
+# root = Tk()
+#
+# tab = ttk.Notebook()
+#
+# button = Button(root, text = 'add new tab', command = add_new_tab)
+# button.pack()
+#
+# tab.pack(fill = BOTH)
 #
 # root.mainloop()
