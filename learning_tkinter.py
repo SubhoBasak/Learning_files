@@ -834,3 +834,42 @@
 # tab.pack(fill = BOTH)
 #
 # root.mainloop()
+#
+
+# tag
+
+# from tkinter import *
+#
+# root = Tk()
+#
+# text = Text(root)
+# text.pack()
+#
+# text.insert(1.0, 'hi my name is subho')
+#
+# text.tag_add('tg', '1.5', '1.9')
+# text.tag_config('tg', foreground = 'red')
+#
+# root.mainloop()
+#
+
+# replace and search
+
+# from tkinter import *
+#
+# def replace_():
+#     indx = text.search('python', 1.0, END)
+#     if indx:
+#         offset = indx + '+%dc' % len('python')
+#         text.replace(indx, offset, 'Python')
+#
+# root = Tk()
+#
+# text = Text(root)
+# text.pack()
+#
+# button = Button(root, text = 'Replace', command = replace_)
+# button.pack()
+#
+# root.mainloop()
+
